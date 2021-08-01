@@ -1,7 +1,11 @@
 package ex.autocomplete.impl;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import java.util.List;
 
-public interface CityMapper extends BaseMapper<CityData> {
+import component.mybatisex.BasicMapper;
+import ex.autocomplete.QueryParam;
 
+public interface CityMapper extends BasicMapper<CityData> {
+
+	List<CityData> queryCities(QueryParam param);
 }
