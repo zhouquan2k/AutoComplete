@@ -1,0 +1,54 @@
+6058560	London	London	Landona,London,Londonas,Londono,YXU,leondeon,lndn,lndn  antaryw,londoni,lun dui,lun dun,lwndwn,rondon,Лондон,לונדון,لندن,لندن، انتاریو,لندن، اونٹاریو,ლონდონი,ロンドン,伦敦,런던	42.98339	-81.23304	P	PPL	CA		08				346765		252	America/Toronto	2012-08-19
+5238077	Londonderry	Londonderry	Kent,Londonderry	43.22646	-72.80649	P	PPL	US		VT	025	40225		1742	349	352	America/New_York	2017-05-23
+8310734	Lockhart River	Lockhart River	IRG,Lockhart River	-12.78723	143.34354	P	PPL	AU		04	34570			761		31	Australia/Brisbane	2019-07-18
+8310735	Londonderry	Londonderry	Londonderry	-33.64656	150.73515	P	PPLX	AU		02	16350			3848		23	Australia/Sydney	2019-07-18
+8310737	Malua Bay	Malua Bay	Malua Bay	-35.79382	150.22833	P	PPL	AU		02	12750			1844		17	Australia/Sydney	2019-07-18
+8310738	Mannering Park	Mannering Park	Mannering Park	-33.1581	151.53477	P	PPLX	AU		02	11650			2430		21	Australia/Sydney	2019-07-18
+8310739	Marsden Park	Marsden Park	Marsden Park	-33.69204	150.83731	P	PPLX	AU		02	10750			991		39	Australia/Sydney	2019-07-18
+8310740	Macmasters Beach	Macmasters Beach	McMasters Beach	-33.49663	151.42215	P	PPLX	AU		02	11650			1249		36	Australia/Sydney	2019-07-18
+8310742	Milingimbi	Milingimbi	Milingimbi	-12.10188	134.91901	P	PPL	AU		03	71300			1279		8	Australia/Darwin	2019-07-18
+8310743	Modanville	Modanville	Modanville,Modonville	-28.71524	153.30099	P	PPL	AU		02	14850			607		166	Australia/Sydney	2019-07-18
+8310745	Mudjimba	Mudjimba	Mudjimba	-26.61497	153.0989	P	PPLX	AU		04	36720			2710		5	Australia/Brisbane	2019-07-18
+8310746	Nangwarry	Nangwarry	Nangwarry	-37.54599	140.81451	P	PPL	AU		05	48340			514		73	Australia/Adelaide	2019-07-18
+8310747	Nathalia	Nathalia	Natejlija,Nathalia,Натейлия	-36.05772	145.20406	P	PPL	AU		07	24900			1830		105	Australia/Melbourne	2019-07-18
+8310748	Nelly Bay	Nelly Bay	Nelly Bay	-19.15775	146.84977	P	PPLX	AU		04	37010			1661		13	Australia/Brisbane	2019-07-18
+8310749	Ngukurr	Ngukurr	Ngukurr,RPM	-14.73081	134.73102	P	PPL	AU		03	73600			1154		31	Australia/Darwin	2019-07-18
+8310750	Ningi	Ningi	Ningi	-27.06108	153.07883	P	PPLX	AU		04	35010			4599		15	Australia/Brisbane	2019-07-18
+8310752	Ocean Shores	Ocean Shores	Ocean Shores	-28.5093	153.5376	P	PPL	AU		02	11350			5145		6	Australia/Sydney	2019-07-18
+8310755	Orient Point	Orient Point	Orient Point	-34.90913	150.74967	P	PPL	AU		02	16950			597		31	Australia/Sydney	2019-07-18
+8310756	Otago	Otago	Otago	-42.80875	147.29842	P	PPLX	AU		06	61410			521		23	Australia/Hobart	2019-07-18
+8310757	Stieglitz	Stieglitz	Stieglitz	-41.32168	148.30583	P	PPL	AU		06	60210			521		8	Australia/Hobart	2019-07-18
+8310758	Stratham	Stratham	Stratham	-33.46324	115.5862	P	PPL	AU		08	51400			677		28	Australia/Perth	2019-07-18
+8310759	Sussex Inlet	Sussex Inlet	Sussex Inlet	-35.15671	150.58533	P	PPL	AU		02	16950			3509		3	Australia/Sydney	2019-07-18
+8310760	Tapitallee	Tapitallee	Tapitallee	-34.82982	150.53969	P	PPL	AU		02	16950			602		73	Australia/Sydney	2019-07-18
+8310762	Palm Island	Palm Island	PMK,Palm Island	-18.73565	146.57788	P	PPLX	AU		04	35790			2516		6	Australia/Brisbane	2019-07-18
+8310763	Pannawonica	Pannawonica	Pannawonica	-21.63918	116.32223	P	PPL	AU		08	50250			951		201	Australia/Perth	2019-07-18
+8310764	Paraburdoo	Paraburdoo	PBO,Paraburdoo	-23.20417	117.66973	P	PPL	AU		08	50250			1740		389	Australia/Perth	2019-07-18
+8310768	Pormpuraaw	Pormpuraaw	EDR,Pormpuraaw	-14.89884	141.62118	P	PPL	AU		04	36070			783		8	Australia/Brisbane	2019-07-18
+8310769	Pottsville Beach	Pottsville Beach	Pottsville Beach	-28.38853	153.56564	P	PPLX	AU		02	17550			3298		4	Australia/Sydney	2018-11-15
+8310770	Ramingining	Ramingining	RAM,Ramingining	-12.33178	134.93192	P	PPL	AU		03	71300			880		34	Australia/Darwin	2019-07-18
+8310771	Robinvale	Robinvale	RBC,Robinvale,Robinvejl,Робинвейл	-34.58356	142.77228	P	PPL	AU		07	26610			3108		57	Australia/Sydney	2019-07-18
+8310772	Rottnest Island	Rottnest Island	Ile Rottnest,Rottnest,Rottnest Island,Rottnest-eiland,jzyrh ratnst,luo de nai si tuo dao,luo te ni si dao,Île Rottnest,Роттнест,جزیره راتنست,罗得乃斯脱岛,羅特尼斯島	-31.99517	115.5404	P	PPL	AU		08	51820			565		10	Australia/Perth	2019-07-18
+8310774	Sandstone Point	Sandstone Point	Sandstone Point	-27.08374	153.13235	P	PPLX	AU		04	35010			3831		15	Australia/Brisbane	2019-07-18
+8310775	Sarina Beach	Sarina Beach	Sarina Beach	-21.38843	149.30862	P	PPL	AU		04	34770			615		7	Australia/Brisbane	2019-07-18
+8310776	Scotts Head	Scotts Head	Scotts Head	-30.7477	152.99611	P	PPL	AU		02	15700			865		14	Australia/Sydney	2019-07-18
+8310777	Sellicks Beach	Sellicks Beach	Sellicks Beach	-35.33869	138.44734	P	PPLX	AU		05	45340			2538		56	Australia/Adelaide	2019-07-18
+8310778	Shoal Point	Shoal Point	Shoal Point	-21.00476	149.15273	P	PPLX	AU		04	34770			908		12	Australia/Brisbane	2019-07-18
+8310779	South West Rocks	South West Rocks	South West Rocks	-30.88553	153.04126	P	PPL	AU		02	14350			4847		13	Australia/Sydney	2019-07-18
+8310780	Thursday Island	Thursday Island	Ile Thursday,Ilha Thursday,Tersdi,Thursday,Thursday Island,Torsdagsoen,Torsdagsön,Wyspa Thursday,mog-yoseom,mu yao dao,ta shi die dao,xing qi si dao,Île Thursday,Терсди,Терсді,他士爹島,星期四岛,星期四島,木曜島,목요섬	-10.58257	142.21949	P	PPL	AU		04	36950			2992		19	Australia/Brisbane	2019-07-18
+8310784	Wallabi Point	Wallabi Point	Wallabi Point	-31.99515	152.56845	P	PPL	AU		02	15240			681		7	Australia/Sydney	2019-07-18
+8310786	Warragamba	Warragamba	Warragamba	-33.89191	150.60461	P	PPL	AU		02	18400			1223		181	Australia/Sydney	2019-07-18
+8310788	Wickham	Wickham	Wickham	-20.67474	117.13784	P	PPL	AU		08	54310			2594		12	Australia/Perth	2019-07-18
+8310790	Yellow Rock	Yellow Rock	Yellow Rock	-33.6985	150.6346	P	PPLX	AU		02	10900			989		251	Australia/Sydney	2019-07-18
+8335007	East Perth	East Perth	East Perth	-31.95872	115.87109	P	PPLX	AU		08	57080			11549		22	Australia/Perth	2019-07-18
+8335008	Leederville	Leederville	Leederville	-31.93628	115.8419	P	PPLX	AU		08	58570			3053		19	Australia/Perth	2019-07-18
+8347324	Doveton	Doveton		-37.99346	145.23891	P	PPLX	AU		07	21610			9291		45	Australia/Melbourne	2019-07-18
+8347325	Endeavour Hills	Endeavour Hills		-37.97695	145.25866	P	PPLX	AU		07	21610			24116		92	Australia/Melbourne	2019-07-18
+8347676	Murray	Murray		-19.31803	146.79494	P	PPLX	AU		04	37010			1679		15	Australia/Brisbane	2019-07-18
+8347677	Sefton	Sefton		-33.88773	151.01053	P	PPLX	AU		02	11570			5757		38	Australia/Sydney	2019-07-18
+8347678	Moorebank	Moorebank		-33.94372	150.95657	P	PPLX	AU		02	14900			9621		13	Australia/Sydney	2019-07-18
+8347682	Turrella	Turrella		-33.93033	151.14209	P	PPLX	AU		02	16650			2496		11	Australia/Sydney	2019-07-18
+8347683	Montello	Montello		-41.05762	145.89626	P	PPLX	AU		06	60610			1205		118	Australia/Hobart	2019-07-18
+8347684	Thurgoona	Thurgoona		-36.03626	146.99609	P	PPLX	AU		02	10050			8394		190	Australia/Sydney	2019-07-18
+8347688	Calala	Calala		-31.17356	150.98059	P	PPLX	AU		02	17310			4023		428	Australia/Sydney	2019-07-18
+8347690	Acacia Gardens	Acacia Gardens		-33.73159	150.91636	P	PPLX	AU		02	10750			3780		87	Australia/Sydney	2019-07-18

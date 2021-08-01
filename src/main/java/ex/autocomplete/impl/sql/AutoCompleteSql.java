@@ -39,7 +39,7 @@ public class AutoCompleteSql implements AutoComplete {
 			//city.setScore((double)originQ.length()/(double)c.getName().length()*0.5+c.getDistance()*0.5);
 			ret.getSuggestions().add(city);
 		}
-		/*
+		/* refactored: using sql sort
 		//resort suggestions according to score
 		Collections.sort(ret.getSuggestions(),new Comparator<City>() {
 			@Override

@@ -137,6 +137,78 @@
 	
 	
 	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-failsafe-plugin</artifactId>
+    			<configuration>
+	    			<includes>
+	            		<include>**/*IT.java</include><!--include your own format of integration test-->
+	        	</includes>
+        		</configuration>
+    			<executions>
+		          <execution>
+		            <goals>
+		              <goal>integration-test</goal>
+		              <goal>verify</goal>
+		            </goals>
+		          </execution>
+		        </executions>
+    		</plugin>
+			<plugin>
+				<groupId>io.fabric8</groupId>
+  				<artifactId>docker-maven-plugin</artifactId>
+  				<version>0.36.1</version>
+  				<configuration>
+  					<images>
+  						<image>
+  							<alias>mysql8</alias>
+  							<name>mysql:8</name>
+		  					<run>
+		  						<ports>
+		  							<port>33066:3306</port>
+		  						</ports>
+		  						<env>
+		  							<MYSQL_ROOT_PASSWORD>root</MYSQL_ROOT_PASSWORD>
+		  							<MYSQL_DATABASE>ex</MYSQL_DATABASE>
+		  						</env>
+		  						<cmd>--default-authentication-plugin=mysql_native_password</cmd>
+		  						<wait>
+		  							<!-- log>/usr/sbin/mysqld: ready for connections. Version:</log-->
+		  							<!-- tcp>
+		  								<mode>mapped</mode>
+		  								<ports>
+		  									<port>33066</port>
+		  								</ports>
+		  							</tcp-->
+		  							<time>20000</time>
+		  						</wait>
+		  					</run>
+  						</image>
+  					</images>
+  				</configuration>
+  				<executions>
+				    <execution>
+				       <id>start</id>
+				       <phase>pre-integration-test</phase>
+				       <goals>
+				         <!-- "build" should be used to create the images with the
+				              artifact -->
+				         <!-- goal>build</goal-->
+				         <goal>start</goal>
+				       </goals>
+				    </execution>
+				    <execution>
+				       <id>stop</id>
+				       <phase>post-integration-test</phase>
+				       <goals>
+				         <goal>stop</goal>
+				      </goals>
+				    </execution>
+				  </executions>
+  			</plugin>
+  		</plugins>
+			
 		<resources>
 			<resource>
                 <directory>src/main/resources</directory>

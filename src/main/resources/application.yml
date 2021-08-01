@@ -3,7 +3,7 @@ server:
   tomcat:
     max-swallow-size: -1
   servlet:
-    context-path: "/api" 
+    context-path: "/" 
     
   compression:
     enabled: true
@@ -128,6 +128,9 @@ logging:
   
 app:
   mysql-host: tencent.atuspace.site:3306
+  #mysql-host: localhost:33066
+  city-data-file: /cities500.txt
+  #city-data-file: /cities-test.txt
      
   
  

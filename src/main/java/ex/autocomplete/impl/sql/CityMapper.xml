@@ -30,7 +30,8 @@
 	   	where name like #{q} 
    	) 
    	-- score = distance*0.8 + match size*0.2
-   	select *,distance*0.8+(CHAR_LENGTH(#{q})-1)/CHAR_LENGTH(name)*0.2 as score from city
+   	select *,distance*0.8+(CHAR_LENGTH(#{q})-1)/CHAR_LENGTH(name)*0.2 as score 
+   	from city
    	order by score desc
 	limit 100
 	</select>

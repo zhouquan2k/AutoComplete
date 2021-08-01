@@ -1,5 +1,6 @@
 package ex.autocomplete.impl.sql;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.gitee.sunchenbin.mybatis.actable.annotation.Column;
 import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
@@ -23,6 +24,8 @@ public class CityData {
 	double longitude;
 	
 	//not a column
+	
+	@TableField(exist = false)
 	double score;
 	
 	public City toCity() {
