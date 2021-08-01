@@ -1,9 +1,10 @@
-package ex.autocomplete.impl;
+package ex.autocomplete.impl.sql;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.gitee.sunchenbin.mybatis.actable.annotation.Column;
 import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
 
+import ex.autocomplete.City;
 import lombok.Data;
 
 @Data
@@ -19,5 +20,12 @@ public class CityData {
 	@Column
 	double latitude;
 	@Column
-	double longtitude;
+	double longitude;
+	
+	//not a column
+	double score;
+	
+	public City toCity() {
+		return new City(name+","+district,latitude,longitude,score);
+	}
 }

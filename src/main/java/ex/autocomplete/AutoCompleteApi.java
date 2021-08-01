@@ -26,8 +26,8 @@ public class AutoCompleteApi {
 	}
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public QueryResult query(@RequestParam String q)
+	public QueryResult query(@RequestParam String q,@RequestParam double latitude,@RequestParam double longitude)
 	{
-		return this.autoComplete.query(new QueryParam(q));
+		return this.autoComplete.query(new QueryParam(q,latitude,longitude));
 	}
 }

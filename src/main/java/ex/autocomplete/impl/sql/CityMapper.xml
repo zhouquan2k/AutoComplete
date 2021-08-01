@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ex.autocomplete.impl.sql.CityMapper">
+	
+	<!--resultMap id="MetaNode" type="com.atusoft.bio.domain.MetaNode" autoMapping="true"> 
+	</resultMap-->
+	
+	<select id="queryCities" resultType="ex.autocomplete.impl.sql.CityData" >
+	  with city as (
+		  select *,
+			-- 6378.138 * 
+			1- (2 * ASIN(
+	      SQRT(
+	        POW(
+	          SIN(
+	            (
+	              #{latitude} * PI() / 180 - latitude * PI() / 180
+	            ) / 2
+	          ), 2
+	        ) + COS( #{latitude} * PI() / 180) * COS(latitude * PI() / 180) * POW(
+	          SIN(
+	            (
+	              #{longitude} * PI() / 180 - longitude * PI() / 180
+	            ) / 2
+	          ), 2
+	        )
+	      )
+	    ) / PI())  AS distance
+	   	from t_city 
+	   	where name like #{q} 
+   	) 
+   	-- score = distance*0.8 + match size*0.2
+   	select *,distance*0.8+(CHAR_LENGTH(#{q})-1)/CHAR_LENGTH(name)*0.2 as score from city
+   	order by score desc
+	limit 100
+	</select>
+</mapper>
