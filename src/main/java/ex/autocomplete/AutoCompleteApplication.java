@@ -26,8 +26,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication(exclude = {
 				org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class,
 		})
-		@ComponentScan(value={})
-		@MapperScan(basePackages ={})
+		@ComponentScan(value={"com.gitee.sunchenbin","ex.autocomplete"})
+		@MapperScan(basePackages ={"com.gitee.sunchenbin.mybatis.actable.dao.*","ex.autocomplete.*"})
 public class AutoCompleteApplication {
 
 	public static void main(String[] args) throws UnknownHostException {

@@ -123,16 +123,6 @@
 		    <version>3.27.0-GA</version>
 		</dependency>
 		
-		
-		<!-- TestNG -->
-		<dependency>
-		    <groupId>org.testng</groupId>
-		    <artifactId>testng</artifactId>        
-		    <version>7.0.0</version>
-		    <scope>test</scope>
-		</dependency>
-	
-		
 	</dependencies>
 	
 	<dependencyManagement>
@@ -145,5 +135,20 @@
 		</dependencies>
 	</dependencyManagement>	
 	
+	
+	<build>
+		<resources>
+			<resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
 	
 </project>

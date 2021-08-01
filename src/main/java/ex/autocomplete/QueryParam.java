@@ -9,4 +9,8 @@ public class QueryParam {
 	//TODO
 	String lang;
 	String apiKey;
+	
+	public QueryParam(String q) {
+		this.q=q;
+	}
 }
