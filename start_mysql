@@ -1,0 +1,1 @@
+docker run --name mysql8 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=ex -p 33066:3306  -d mysql:8 mysqld --default-authentication-plugin=mysql_native_password

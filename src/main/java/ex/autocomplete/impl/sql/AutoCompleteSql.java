@@ -60,7 +60,7 @@ public class AutoCompleteSql implements AutoComplete {
 		int count=this.cityMapper.selectCount(new QueryWrapper<>());
 		if (count>0) return;
 		
-		log.info("importing city data from ",originDataFile,"...");
+		log.info("importing city data from %s...",originDataFile);
 		
 		InputStream stream = this.getClass().getResourceAsStream(originDataFile);
 		BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
@@ -94,7 +94,7 @@ public class AutoCompleteSql implements AutoComplete {
 		reader.close();
 		
 		count=this.cityMapper.selectCount(new QueryWrapper<>());
-		log.info("importinged cityies: ",count);
+		log.info("imported cities: %d ",count);
 	}
 
 }
