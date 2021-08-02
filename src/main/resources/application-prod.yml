@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    dynamic:  
+      datasource:
+        master:
+          username: root
+          password: root
+          
+          
+app:
+  mysql-host: localhost:33066
+  city-data-file: /cities500.txt
