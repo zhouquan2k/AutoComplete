@@ -10,15 +10,17 @@
 
 ## run
 * chmod +x start_mysql; ./start_mysql # start mysql container 
-* mvn -D app.mysql-host=127.0.0.1:33066 exec:java # run rest api server
+* mvn -D spring.profiles.active=prod exec:java # run rest api server, import city data to database when run first time 
 
 ## api url
 * api:  GET http://host:8088/suggestions?q= &latitude= &longitude= 
 * swagger doc: http://host:8088/swagger-ui.html
 
 ## Design: Main class diagram
-<img width="1424" alt="WeChatcab89d8d77058e841aea4182a68c4d8d" src="https://user-images.githubusercontent.com/7393184/127795435-95fd286f-21b1-434e-8277-d4ab52b45efe.png">
+<img width="889" alt="WeChat3932ca9b98bebed12986b0d2b937d3b5" src="https://user-images.githubusercontent.com/7393184/127803484-9675f573-f695-4522-96fe-b19d7c2d2160.png">
 
+## Design: score
+score = distance/max distance * 0.8 + matched_length/city_name_length * 0.2
 
 ## Design: Java Package comment
 * ex.autocomplete: Rest API

@@ -1,2 +1,4 @@
 mkdir -p ./mysql-data8
-docker run --name mysql8 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=ex -v ./mysql-data8:/var/lib/mysql -p 33066:3306  -d mysql:8 mysqld --default-authentication-plugin=mysql_native_password
+dir=$(cd mysql-data8;pwd)
+echo "$dir"
+docker run --name mysql8 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=ex -v $dir:/var/lib/mysql -p 33066:3306  -d mysql:8 mysqld --default-authentication-plugin=mysql_native_password
