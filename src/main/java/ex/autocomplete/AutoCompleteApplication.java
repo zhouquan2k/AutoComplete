@@ -18,6 +18,13 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import lombok.extern.slf4j.Slf4j;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * 
+ * @author zhouquan
+ * 
+ * main entry for SpringBoot application
+ * 
+ */
 @Slf4j
 //@EnableMeta
 @EnableSwagger2

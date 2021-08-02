@@ -10,7 +10,7 @@
 
 ## run
 * chmod +x start_mysql; ./start_mysql # start mysql container 
-* mvn -D spring.profiles.active=prod exec:java # run rest api server, import city data to database when run first time 
+* mvn -D spring.profiles.active=prod exec:java # run rest api server, import about 190K city data to database when first time run 
 
 ## api url
 * api:  GET http://host:8088/suggestions?q= &latitude= &longitude= 

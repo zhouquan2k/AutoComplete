@@ -7,6 +7,10 @@ spring:
           username: root
           password: root
           
+server:
+  port: 8088
+  address: 0.0.0.0
+  
 app:
   mysql-host: localhost:33066
   city-data-file: /cities500.txt

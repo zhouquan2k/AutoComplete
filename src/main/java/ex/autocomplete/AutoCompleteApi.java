@@ -13,6 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.annotations.Api;
 
+/**
+ * 
+ * @author zhouquan
+ * 
+ * Rest API implementation
+ * 
+ */
 @RestController
 @RequestMapping("/")
 @Api("AutoComplete API")

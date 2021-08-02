@@ -10,8 +10,12 @@ public class QueryParam {
 	double longitude;
 	
 	//TODO
-	String lang;
-	String apiKey;
+	String lang;  // language
+	String apiKey; // used for api client user.
+	
+	public QueryParam() {
+		
+	}
 	
 	public QueryParam(String q,double latitude,double longitude) {
 		this.q=q;

@@ -8,6 +8,11 @@ import com.gitee.sunchenbin.mybatis.actable.annotation.Table;
 import ex.autocomplete.City;
 import lombok.Data;
 
+/**
+ * 
+ * @author zhouquan
+ * entity for city data
+ */
 @Data
 @Table(name="t_city")
 @TableName("t_city")

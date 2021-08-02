@@ -19,7 +19,14 @@ import ex.autocomplete.QueryParam;
 import ex.autocomplete.QueryResult;
 import lombok.extern.slf4j.Slf4j;
 
-
+/**
+ * 
+ * @author zhouquan
+ * 
+ * AutoComplete Engine: SQL implementation,
+ * use any sql relational database, use mybatis/mybatis plus as orm
+ * use sql to do the query
+ */
 @Slf4j
 @Service
 public class AutoCompleteSql implements AutoComplete {
@@ -30,7 +37,7 @@ public class AutoCompleteSql implements AutoComplete {
 	@Override
 	public QueryResult query(QueryParam param) {
 		
-		param.setQ(param.getQ()+"%");
+		param.setQ(param.getQ()+"%"); // for sql like 
 		List<CityData> cities=cityMapper.queryCities(param);
 		QueryResult ret=new QueryResult();
 		
@@ -60,7 +67,7 @@ public class AutoCompleteSql implements AutoComplete {
 		int count=this.cityMapper.selectCount(new QueryWrapper<>());
 		if (count>0) return;
 		
-		log.info("importing city data from %s...",originDataFile);
+		log.info("importing city data from {}...",originDataFile);
 		
 		InputStream stream = this.getClass().getResourceAsStream(originDataFile);
 		BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
@@ -94,7 +101,7 @@ public class AutoCompleteSql implements AutoComplete {
 		reader.close();
 		
 		count=this.cityMapper.selectCount(new QueryWrapper<>());
-		log.info("imported cities: %d ",count);
+		log.info("imported cities: {} ",count);
 	}
 
 }
