@@ -60,5 +60,15 @@ public class AutoCompleteApiIT {
 		assertThat(result.getSuggestions().size()>0);
 		assertThat(result.getSuggestions().get(0).getName().startsWith("Lon"));
 	}
-
+	
+	@Test
+	public void testQueryWithNoResult() throws Exception {
+		String q="SomeWhere";
+		String latitude="45";
+		String longitude="-73";
+		QueryResult result=this.restTemplate.getForObject(String.format("%s/suggestions?q=%s&latitude=%s&longitude=%s",this.getHostPart(),q,latitude,longitude),QueryResult.class);
+		System.out.println(result.getSuggestions());
+		assertThat(result.getSuggestions()!=null);
+		assertThat(result.getSuggestions().size()==0);
+	}
 }

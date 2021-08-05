@@ -2,8 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="ex.autocomplete.impl.sql.CityMapper">
 	
-	<!--resultMap id="MetaNode" type="com.atusoft.bio.domain.MetaNode" autoMapping="true"> 
-	</resultMap-->
 	
 	<select id="queryCities" resultType="ex.autocomplete.impl.sql.CityData" >
 	  with city as (

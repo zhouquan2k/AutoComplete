@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 /**
  * 
@@ -36,6 +37,7 @@ public class AutoCompleteApi {
 		this.autoComplete.initData(this.cityDataFile);
 	}
 	
+	@ApiOperation(value = "query nearest matched cities")
 	@RequestMapping(value = "suggestions", method = RequestMethod.GET)
 	public QueryResult query(@RequestParam String q,@RequestParam(defaultValue="0") double latitude,@RequestParam(defaultValue="0") double longitude)
 	{
