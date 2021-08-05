@@ -19,6 +19,7 @@
 ## run
 * chmod +x start_mysql; ./start_mysql # start mysql container 
 * mvn -D spring.profiles.active=prod exec:java # run rest api server, import about 190K city data to database when first time run 
+* TODO for production usage,should package to a docker image for easy deployment
 
 ## api url
 * api:  GET http://host:8088/suggestions?q= &latitude= &longitude= 
@@ -28,8 +29,26 @@
 ## Design: Main class diagram
 <img width="889" alt="WeChat3932ca9b98bebed12986b0d2b937d3b5" src="https://user-images.githubusercontent.com/7393184/127803484-9675f573-f695-4522-96fe-b19d7c2d2160.png">
 
-## Design: score
+## Design: score 
+distance = 6378.138 * 2 * ASIN(
+      SQRT(
+        POW(
+          SIN(
+            (
+              lat1 * PI() / 180 - lat2 * PI() / 180
+            ) / 2
+          ), 2
+        ) + COS(lat1 * PI() / 180) * COS(lat2 * PI() / 180) * POW(
+          SIN(
+            (
+              lng1 * PI() / 180 - lng2 * PI() / 180
+            ) / 2
+          ), 2
+        )
+      )
+    ) 
 score = distance/max distance * 0.8 + matched_length/city_name_length * 0.2
+(0.8,0.2 is the weight for distance and text match)
 
 ## Design: Java Package comment
 * ex.autocomplete: Rest API
