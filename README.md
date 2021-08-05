@@ -30,7 +30,7 @@
 <img width="889" alt="WeChat3932ca9b98bebed12986b0d2b937d3b5" src="https://user-images.githubusercontent.com/7393184/127803484-9675f573-f695-4522-96fe-b19d7c2d2160.png">
 
 ## Design: score 
-distance = 6378.138 * 2 * ASIN(
+* distance = 6378.138 * 2 * ASIN(
       SQRT(
         POW(
           SIN(
@@ -47,8 +47,8 @@ distance = 6378.138 * 2 * ASIN(
         )
       )
     ) 
-score = distance/max distance * 0.8 + matched_length/city_name_length * 0.2
-(0.8,0.2 is the weight for distance and text match)
+* score = distance/max distance * 0.8 + matched_length/city_name_length * 0.2
+* (0.8,0.2 is the weight for distance and text match)
 
 ## Design: Java Package comment
 * ex.autocomplete: Rest API
